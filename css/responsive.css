@@ -1,0 +1,74 @@
+/* Tablet Styles (768px and below) */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .art-showcase {
+        margin-bottom: 2rem;
+    }
+
+    .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .filter-buttons .btn {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 120px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .artwork-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Mobile Styles (576px and below) */
+@media (max-width: 576px) {
+    body {
+        padding-top: 60px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-section {
+        min-height: auto;
+    }
+
+    .filter-buttons .btn {
+        flex: 1 1 100%;
+    }
+
+    .search-bar {
+        margin: 0 15px;
+    }
+
+    .modal-dialog {
+        margin: 10px;
+    }
+
+    .artwork-meta,
+    .artwork-actions {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+}
+
+/* Landscape Orientation */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        min-height: auto;
+        padding: 2rem 0;
+    }
+}
